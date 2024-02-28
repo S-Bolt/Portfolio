@@ -4,13 +4,14 @@ body{
 
 header{
     display: flex;
-    position: ;
+    position:fixed;
     height: 100px;
-    width: 800px;
-    background-color: antiquewhite;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: rgb(222, 215, 250);
 
 }
-h1{
+header h1{
    height: 200px;
    width: 200px;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -18,11 +19,12 @@ h1{
 }
 header nav{ 
     display: flex;
-
+    justify-content: flex-end;
+    float: right;
 }
 header nav ul {
     display: flex;
-   
+     margin: 1px;
     align-items: center;
     list-style-type: none;
 
@@ -30,10 +32,17 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
+    margin-right: 15px;
    
 }
 
+section {
+    width: 75%;
+    display: inline-block;
+    margin: 10px;
+    background-color: blueviolet;
+}
 
 footer{
-
+padding: 25px;
 }
