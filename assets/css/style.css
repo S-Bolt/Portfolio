@@ -3,7 +3,12 @@ body{
 }
 
 header{
+    display: flex;
+    position: ;
+    height: 100px;
+    width: 800px;
     background-color: antiquewhite;
+
 }
 h1{
    height: 200px;
@@ -11,6 +16,23 @@ h1{
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: aqua;
 }
+header nav{ 
+    display: flex;
+
+}
+header nav ul {
+    display: flex;
+   
+    align-items: center;
+    list-style-type: none;
+
+}
+
+header nav ul li {
+    display: inline-block;
+   
+}
+
 
 footer{
 
