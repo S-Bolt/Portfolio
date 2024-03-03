@@ -11,15 +11,16 @@ header {
     flex: 0 0 15%;
     justify-content: space-between;/*added*/
     align-items: center;/*added*/
-    background-color: #3498db;
+    background-color: #082043;
     color: #fff;
     text-align: center;
     padding: 10px;
+    
 }
 
 header h1{
     display: inline-block;
-    background-color: rgb(136, 154, 156);
+    background-color: rgb(127, 143, 145);
     margin: 0;
     padding: 10px;
 }
@@ -37,13 +38,23 @@ header nav ul {
    text-decoration: underline;
    margin-right: 50px;
    padding: 0;
-    
+   color:white;
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 15px;
+    
    
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/dream-big-work-hard-5556539_1280.jpg");
+    background-size: cover;
+    background-position: 50% 25%; /*may have to experiment with this more, but this was the best solution*/
 }
 
 main {
@@ -55,6 +66,8 @@ main {
     flex: 0 0 25%;
     display: flex;
     flex-direction: column;
+    height: 500px;
+    
 }
 
 .left-section {
@@ -64,6 +77,7 @@ main {
     display: flex;
     justify-content: flex-end; /* Align box to the right */
     align-items: center; /* Center items vertically */
+    
 }
 
 .middle-section {
