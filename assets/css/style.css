@@ -13,60 +13,82 @@ body{
 header{
     display: flex;
     position:fixed;
+    justify-content: space-between;
+    align-items: center;
     height: 70px;
     width: 100%;
-    margin-bottom: 10px;
-    background-color: rgb(34, 8, 236);
+    background-color: rgb(50, 49, 55);
     font-size: 15px;
     
 
 }
 header h1{
-   display: inline-block;
-   width: 200px;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   color: rgb(0, 0, 0);
-   background-color: rgb(37, 88, 18);
-   margin: 10px 0 ;
-   padding-left: 20px;
-   padding-top: 5px;
-   text-align: center;
+    display: inline-block;
+     background-color: rgb(33, 182, 202);
+    margin: 0;
+    padding: 10px;
+ 
 
 }
 header nav{ 
     display: flex;
     justify-content: flex-end;
-    float: right;
+    
+
 }
 header nav ul {
-    display: flex;
-     margin: 1px;
-    align-items: center;
-    list-style-type: none;
-
+   list-style: none;
+   margin-right: 50px;
+   padding: 0;
+    
 }
 
 header nav ul li {
     display: inline-block;
-    margin-right: 15px;
+    margin-left: 15px;
    
 }
 
+.hero {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/dream-big-work-hard-5556539_1280.jpg");
+    background-size: cover;
+    background-position: 50% 25%; /*may have to experiment with this more, but this was the best solution*/
+}
 section {
-    width: 75%;
+    width: 100%;
     display: inline-block;
-    margin: 10px;
-    background-color: blueviolet;
+    background-color:#e4edede3;
+    margin-top: 70px;
+   
 }
 
 footer{
 padding: 25px;
 }
 
-@media screen and (max-width 600px) {
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+footer nav ul li {
+    display:inline-block;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 600px) {
     
 }
 
-@media screen and (max-width 320px) {
+@media screen and (max-width: 320px) {
 
 }
