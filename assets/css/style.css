@@ -19,10 +19,15 @@ header {
 }
 
 header h1{
-    display: inline-block;
+    display: flex;
     background-color: rgb(127, 143, 145);
     margin: 0;
     padding: 10px;
+}
+header h1 img{
+    height: 50px;
+    width: 50px;
+    
 }
 
 header nav{ 
@@ -38,12 +43,16 @@ header nav ul {
    text-decoration: underline;
    margin-right: 50px;
    padding: 0;
-   color:white;
+ 
 }
 
 header nav ul li {
     display: inline-block;
     margin-left: 15px;  
+}
+nav a {
+font-weight: bold;
+color:#fff;
 }
 
 main {
@@ -52,34 +61,43 @@ main {
 }
 
 .left-column {
-    flex: 0 0 25%;
+    flex: 0 0 10%;
     display: flex;
     flex-direction: column;
-    
-    
-    
+       
 }
 
 .left-section {
-    flex: 1;
-    background-color: #2ecc71;
+    flex: 2; /*changed from 1 and adjusted .middle-section flex to 9.*/
+    background-color: #ffffff;
     margin: 5px;
     display: flex;
     justify-content: flex-end; /* Align box to the right */
-    align-items: center; /* Center items vertically */
-    
+    /*align-items: center; /* Center items vertically */
+    border-right: 5px solid black;
 }
 
 .middle-section {
-    flex: 2;
-    background-color: #e74c3c;
+    flex: 9;
+    background-color: #ffffff;
     margin: 5px;
+    border-right: 5px solid black;
 }
 
 .right-section {
     flex: 1;
-    background-color: #f39c12;
+    background-color: #fafafa;
     margin: 5px;
+    border-right: 5px solid black;
+}
+.left-column .box,
+.left-column .middle-section,
+.left-column .right-section {
+    text-align: right;
+   
+    font-size: 150%;
+    color: #000000;
+    /*margin-right: 15px;  is giving the wrong type of margin and not selectign the text i want to provide margin to*/
 }
 
 .right-column {
@@ -117,28 +135,39 @@ main {
     height: 100%;
     margin-top: 25px;
     display: flex;
-    max-height: 600px;
+    max-height: 400px;
 }
 
 #project1 {
     height: 100%;
     margin-top: 25px;
     display: flex;
-    max-height: 600px;
+    max-height: 400px;
 }
 
 #project2 {
    height: 100%;
    margin-top: 25px;
    display: flex;
-   max-height: 600px;
+   max-height: 400px;
+   margin-right: 75px;
 }
 
 #project2 img {
     width: 100%;
     
 }
-
+.contact-me-row {
+    display: flex;
+    justify-content: center;
+}
+.contact-me-row nav ul {
+    display: flex;
+    list-style: none;
+}
+.contact-me-row nav ul li {
+    margin: 20px;
+}
 .label {
     position: absolute;
     bottom: 5%;
