@@ -3,18 +3,20 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+   
+  
 }
 
 header {
     display: flex;/*added*/
-    flex: 0 0 15%;
     justify-content: space-between;/*added*/
     align-items: center;/*added*/
     background-color: #082043;
     color: #fff;
     text-align: center;
     padding: 10px;
+    width: 100vw;
+   
     
 }
 
@@ -49,6 +51,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 15px;  
+
 }
 nav a {
 font-weight: bold;
@@ -94,7 +97,6 @@ main {
 .left-column .middle-section,
 .left-column .right-section {
     text-align: right;
-   
     font-size: 150%;
     color: #000000;
     /*margin-right: 15px;  is giving the wrong type of margin and not selectign the text i want to provide margin to*/
@@ -155,7 +157,10 @@ main {
    margin-right: 75px;
    overflow: hidden;
 }
-
+.top-row a,
+.bottom-row a {
+border: solid blue; /*boder around images*/
+}
 .contact-me-row {
     display: flex;
     justify-content: center;
@@ -172,7 +177,7 @@ main {
     text-decoration: none;  
 }
 .contact-me-row nav ul li.cell:hover::before{
-    content: "(703) 801-8364"
+    content: "(703) 801-8364";
 }
 .label {
     position: absolute;
@@ -183,3 +188,20 @@ main {
     background-color: #3498db;
     padding: 5px;
 }
+
+@media  screen and (max-width: 1024px) {
+    .top-row{
+        flex-direction: column;
+    }
+    .bottom-row{
+        margin-left: 5%;
+        width: 100%;
+    }
+}
+@media  screen and (max-width: 768px)  {
+    header{
+       flex-direction: column;
+    }
+}
+
+/*still stuck with fixing the header issue when is scrolls to smaller displays.  Interfence from other elements when it crosses the threshold"*/
