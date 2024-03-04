@@ -25,8 +25,8 @@ header h1{
     padding: 10px;
 }
 header h1 img{
-    height: 50px;
-    width: 50px;
+    height: 110px;
+    width: 110px;
     
 }
 
@@ -136,6 +136,7 @@ main {
     margin-top: 25px;
     display: flex;
     max-height: 400px;
+    overflow: hidden; /* needed to add after adding link/will likely have to add for each.*/
 }
 
 #project1 {
@@ -143,6 +144,7 @@ main {
     margin-top: 25px;
     display: flex;
     max-height: 400px;
+    overflow: hidden;
 }
 
 #project2 {
@@ -151,12 +153,9 @@ main {
    display: flex;
    max-height: 400px;
    margin-right: 75px;
+   overflow: hidden;
 }
 
-#project2 img {
-    width: 100%;
-    
-}
 .contact-me-row {
     display: flex;
     justify-content: center;
@@ -165,8 +164,15 @@ main {
     display: flex;
     list-style: none;
 }
-.contact-me-row nav ul li {
+.contact-me-row nav ul li a {
     margin: 20px;
+    color: #000000;
+}
+.contact-me-row nav ul li a:hover {
+    text-decoration: none;  
+}
+.contact-me-row nav ul li.cell:hover::before{
+    content: "(703) 801-8364"
 }
 .label {
     position: absolute;
