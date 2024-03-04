@@ -57,6 +57,7 @@ main {
     flex-direction: column;
     
     
+    
 }
 
 .left-section {
@@ -87,6 +88,11 @@ main {
     flex-direction: column;
 }
 
+.about-me-row {
+    height: 183px;
+    display: flex;
+
+}
 .top-row {
     flex: 1;
     display: flex;
@@ -104,7 +110,33 @@ main {
     flex: 1;
     margin: 5px;
     position: relative;
-    border: 1px solid #000;
+    /*cut this border: 1px solid #000;*/
+}
+
+#calculator {
+    height: 100%;
+    margin-top: 25px;
+    display: flex;
+    max-height: 600px;
+}
+
+#project1 {
+    height: 100%;
+    margin-top: 25px;
+    display: flex;
+    max-height: 600px;
+}
+
+#project2 {
+   height: 100%;
+   margin-top: 25px;
+   display: flex;
+   max-height: 600px;
+}
+
+#project2 img {
+    width: 100%;
+    
 }
 
 .label {
